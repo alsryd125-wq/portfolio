@@ -347,7 +347,7 @@
 
   /* ---------- footer ---------- */
   footer{border-top:1px solid var(--line);padding:80px 0 48px}
-  footer h2{font-family:var(--sans);font-weight:700;font-size:clamp(30px,4.6vw,56px);line-height:1.3;letter-spacing:-.04em}
+  footer h2{font-family:var(--sans);font-weight:700;font-size:clamp(26px,3.6vw,46px);line-height:1.3;letter-spacing:-.04em}
   footer h2 em{color:var(--accent);font-style:normal}
   footer .contacts{display:flex;flex-wrap:wrap;gap:12px 32px;margin-top:24px}
   footer .mail{display:inline-flex;align-items:center;gap:10px;font-size:18px;font-weight:600;border-bottom:1.5px solid var(--ink);padding-bottom:4px}
@@ -502,6 +502,37 @@
   .ff-band i { height: 4px; border-radius: 99px; background: linear-gradient(90deg, var(--ff-c1), var(--ff-c2), var(--ff-c3)); position: relative; }
   .ff-band i::after { content: ""; position: absolute; right: -2px; top: 50%; transform: translateY(-50%); border: 7px solid transparent; border-left: 9px solid var(--ff-c3); border-right: 0; }
   .ff-title em { font-style: normal; color: var(--ff-c1); }
+  /* ---------- creative planning process ---------- */
+  .cp{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:36px 36px 32px;margin-bottom:56px}
+  .cp-eb{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+  .cp-head h3{font-size:clamp(21px,2.3vw,28px);font-weight:800;letter-spacing:-.04em;line-height:1.35;margin-top:6px}
+  .cp-head h3 em{font-style:normal;color:var(--accent)}
+  .cp-head p{font-size:15px;color:var(--muted);margin-top:6px}
+  .cp-steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px;counter-reset:none}
+  .cp-step{position:relative;display:flex;flex-direction:column;background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:22px 22px 20px}
+  .cp-step:not(:last-child)::after{content:"→";position:absolute;right:-16px;top:26px;z-index:1;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;font-size:13px;font-weight:700;display:grid;place-items:center}
+  .cp-no{font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--accent)}
+  .cp-step h4{font-size:18px;font-weight:800;letter-spacing:-.03em;margin:4px 0 14px}
+  .cp-chain{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+  .cp-chain span{font-size:13.5px;font-weight:600;color:var(--ink-2);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:7px 12px}
+  .cp-chain span b{display:inline-block;margin-left:6px;font-size:12px;color:var(--accent)}
+  .cp-chain span.out{background:var(--accent-soft);border-color:transparent;color:var(--accent);font-weight:700}
+  .cp-chain i{font-style:normal;font-size:11px;color:var(--muted);transform:rotate(90deg);margin-left:14px;line-height:1}
+  .cp-facts{list-style:none;display:grid;gap:6px}
+  .cp-facts li{font-size:14px;color:var(--ink-2);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 12px}
+  .cp-facts strong,.cp-out strong{color:var(--ink)}
+  .cp-kpi{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+  .cp-kpi .from{font-size:22px;font-weight:700;color:var(--muted);text-decoration:line-through;text-decoration-thickness:2px}
+  .cp-kpi i{font-style:normal;color:var(--muted)}
+  .cp-kpi .to{font-size:30px;font-weight:800;letter-spacing:-.03em;color:var(--accent)}
+  .cp-kpi small{flex-basis:100%;font-size:12px;color:var(--muted)}
+  .cp-out{margin-top:auto;padding-top:16px;font-size:14px;line-height:1.6;color:var(--ink-2)}
+  .cp-out b{display:block;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+  @media (max-width:900px){
+    .cp{padding:24px 18px}
+    .cp-steps{grid-template-columns:1fr;gap:24px}
+    .cp-step:not(:last-child)::after{content:"↓";right:50%;top:auto;bottom:-25px;transform:translateX(50%)}
+  }
 </style>
 </head>
 <body>
@@ -538,20 +569,20 @@
 <!-- ================= INTRO ================= -->
 <section class="intro">
   <div class="wrap">
-    <span class="eyebrow rv">Performance Marketer</span>
+    <span class="eyebrow rv">Performance &amp; Growth Marketer</span>
     <h1 class="rv">가설을 세우고, 실험으로 증명하고,<br>숫자로 <em>키웁니다.</em></h1>
-    <p class="hero-sub rv">건기식·뷰티·커머스 9개 브랜드(최대 연 60억)에서 측정 체계 설계부터 풀 퍼널 운영까지, <br>브랜드의 다음 성장 레버를 찾아온 3년 차 마케터 <b>이민경</b>입니다.</p>
+    <p class="hero-sub rv">뷰티·건기식·커머스 9개 브랜드(최대 연 60억)에서 측정 체계 설계부터 풀 퍼널 운영까지, <br>브랜드의 다음 성장 레버를 찾아온 3년 차 마케터 <b>이민경</b>입니다.</p>
 
     <div class="metrics rv">
-      <div class="metric"><b>전환 3배</b><span class="m-brand">스토어허브</span><p>전환 측정 체계 재설계<br>(월 15건 → 45건)</p></div>
       <div class="metric"><b>매출 +78%</b><span class="m-brand">지누스</span><p>고효율 지면 검증 후<br>단계적 확대</p></div>
       <div class="metric"><b>ROAS 829%</b><span class="m-brand">메노킨 JP</span><p>할인 경쟁 대신<br>구매 트리거 이벤트로 재설계</p></div>
+      <div class="metric"><b>전환 3배</b><span class="m-brand">스토어허브</span><p>전환 측정 체계 재설계<br>(월 15건 → 45건)</p></div>
     </div>
 
     <div class="intro-body rv">
       <p class="lead"><strong>고객의 행동이 바뀌는 지점</strong>에서 출발해, 목표를 좌우하는 <strong>선행지표</strong>를 찾아 빠르게 검증하고 끝까지 실행합니다.
-        동료와는 사람이 아닌 문제를 중심으로 소통하고, 결정된 일은 함께 완수합니다.
-        뷰티·패션·가구·가전·창고 서비스까지 업종을 넘나든 운영 경험으로 <span class="hl-brand">프롬랩스</span>의 고객과 브랜드를 빠르게 이해하고, 매출로 이어지는 성과를 만들겠습니다.</p>
+        뷰티·패션·가구·가전·창고 서비스까지 업종을 넘나든 운영 경험으로 <span class="hl-brand">프롬랩스</span>의 고객과 브랜드를 빠르게 이해하겠습니다.
+        채널 하나가 아닌 퍼널 전체를 보고, 데이터로 병목을 찾아 가장 효율적인 성장 경로를 설계하는 그로스 마케터로서 목표를 끝까지 달성하겠습니다.</p>
       <div class="chips">
         <span class="chip">가설 설계·실험</span><span class="chip">풀 퍼널 믹스</span><span class="chip">전환 측정 체계</span><span class="chip">고객 메시지 발굴</span>
       </div>
@@ -574,7 +605,7 @@
           <ul>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:minkooung711@naver.com">minkooung711@naver.com</a></li>
           </ul>
-          <p class="quote">도전을 추구하며 팀원들과의 시너지를 믿는, 퍼포먼스 마케터 이민경입니다.</p>
+          <p class="quote">고객 데이터에서 성장의 실마리를 찾고, 팀과 함께 실험하며 숫자로 증명하는 마케터 이민경입니다.</p>
         </div>
       </aside>
 
@@ -1075,7 +1106,7 @@
       <div class="ff-head">
         <p class="ff-eyebrow">Full-Funnel Case · Discovery Expedition</p>
         <h3 class="ff-title"><em>브랜딩부터 퍼포먼스까지</em>, 풀 퍼널 마케팅을 실행했습니다</h3>
-        <p class="ff-desc">인지 → 관심·유입 → 전환 단계별 병목을 진단하고, 단계마다 다른 성장 레버를 실험했습니다 · 연 60억 · Kakao · Meta · 무신사</p>
+        <p class="ff-desc">인지 → 관심·유입 → 전환 단계별 병목을 진단하고, 단계마다 다른 성장 레버를 실험했습니다</p>
       </div>
 
       <div class="ff-band" aria-hidden="true"><span>브랜딩</span><i></i><span>퍼포먼스</span></div>
@@ -1382,7 +1413,43 @@
   <div class="wrap">
     <div class="sec-head rv">
       <h2>Creative Planning<small>소재 기획</small></h2>
-      <p>프로모션의 목적과 매체 지면에 맞춰 메시지 · 레이아웃 · 혜택 구조를 기획하고, 성과 데이터를 다음 소재의 기준으로 남깁니다.</p>
+      <p>리뷰·경쟁사·현지 사용자 분석으로 메시지를 찾고, 템플릿으로 빠르게 확장하며, 성과 데이터를 다음 소재의 기준으로 남깁니다.</p>
+    </div>
+
+    <!-- 소재 기획 프로세스 -->
+    <div class="cp rv">
+      <div class="cp-head">
+        <span class="cp-eb">How I Plan Creatives</span>
+        <h3>감이 아닌 <em>고객의 언어</em>에서 출발하는 소재 기획</h3>
+        <p>분석으로 메시지를 찾고, 현지 사용자에 맞게 다듬고, 템플릿으로 빠르게 확장합니다.</p>
+      </div>
+      <ol class="cp-steps">
+        <li class="cp-step">
+          <span class="cp-no">01 · Research</span>
+          <h4>고객 리뷰에서 USP 발굴</h4>
+          <div class="cp-chain">
+            <span>자사 · 경쟁사 분석</span><i aria-hidden="true">▸</i>
+            <span>상품 리뷰 분석<b>제품별 1,000건+</b></span><i aria-hidden="true">▸</i>
+            <span class="out">USP 소재 반영</span>
+          </div>
+          <p class="cp-out"><b>Output</b>리뷰 속 <strong>소비자 언어</strong>를 소재 카피에 그대로 활용해 공감도·신뢰도 강화</p>
+        </li>
+        <li class="cp-step">
+          <span class="cp-no">02 · Localize</span>
+          <h4>일본 사용자 특성 반영</h4>
+          <ul class="cp-facts">
+            <li>구매 전 <strong>정보 탐색</strong>이 많음</li>
+            <li>한국 대비 <strong>활자 저항감</strong>이 낮음</li>
+          </ul>
+          <p class="cp-out"><b>Output</b>4분할 정보형 · 1本あたり 가격 환산 · 뷰티 어워드 배지 등 <strong>정보 밀도 높은 소재</strong>로 설계</p>
+        </li>
+        <li class="cp-step">
+          <span class="cp-no">03 · Scale</span>
+          <h4>소재 템플릿화</h4>
+          <div class="cp-kpi"><span class="from">3일</span><i aria-hidden="true">→</i><span class="to">1~2일</span><small>소재 제작 기간</small></div>
+          <p class="cp-out"><b>Output</b>더 많은 소재를 효율적으로 공급해 <strong>사용자 소재 피로도 감소</strong></p>
+        </li>
+      </ol>
     </div>
 
     <!-- 메노킨 -->
@@ -1522,7 +1589,7 @@
 <!-- ================= FOOTER ================= -->
 <footer id="contact">
   <div class="wrap">
-    <h2 class="rv"><em>매출</em>로 이어지는<br>성과를 보여드리겠습니다.</h2>
+    <h2 class="rv">K뷰티의 부흥기인 지금,<br>프롬랩스의 <em>새로운 매출 신화</em>를<br>숫자로 나타내는 그로스 마케터가 되겠습니다.</h2>
     <div class="contacts rv">
       <a class="mail" href="mailto:minkooung711@naver.com">minkooung711@naver.com <span aria-hidden="true">→</span></a>    </div>
     <div class="bottom">
