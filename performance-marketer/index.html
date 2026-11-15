@@ -53,7 +53,7 @@
   .nav ul a:hover::after{transform:scaleX(1)}
 
   /* ---------- hero ---------- */
-  .hero{position:relative;height:clamp(420px,52vw,640px);overflow:hidden}
+  .hero{position:relative;height:clamp(240px,28vw,360px);overflow:hidden}
   .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 28%}
   .hero-art{position:absolute;inset:0;width:100%;height:100%}
   .hero::after{content:"";position:absolute;inset:0 0 auto 0;height:120px;background:linear-gradient(rgba(253,252,250,.55),transparent);pointer-events:none}
@@ -407,7 +407,7 @@
     .wrap{padding:0 16px}
     .nav ul{gap:16px;font-size:13px}
     .nav ul li.hide-sm{display:none}
-    .hero{height:400px}
+    .hero{height:220px}
     .grid-2,.grid-3,.figs.two,.compare{grid-template-columns:1fr}
     .asis{grid-template-columns:1fr;text-align:center}
     .asis .arrow{transform:rotate(90deg);justify-self:center}
@@ -551,8 +551,8 @@
     <a href="#top" class="brand">이민경</a>
     <nav aria-label="주요 메뉴">
       <ul>
-        <li><a href="#about">About</a></li>
         <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#creative">Creative</a></li>
         <li class="hide-sm"><a href="#contact">Contact</a></li>
       </ul>
@@ -579,13 +579,13 @@
 <section class="intro">
   <div class="wrap">
     <span class="eyebrow rv">Performance Marketer</span>
-    <h1 class="rv">건기식·뷰티·커머스 9개 브랜드를 운영하며 <br>ROAS를 <em>847%</em> 개선한 3년 차 <br>퍼포먼스 마케터 <em>이민경</em>입니다.</h1>
+    <h1 class="rv">뷰티·패션·가구·건기식 9개 브랜드에서 <br>ROAS를 <em>847%p</em> 개선한 <br>3년 차 퍼포먼스 마케터 <em>이민경</em>입니다.</h1>
     <p class="hero-sub rv">최대 연 60억 규모의 광고 예산을 운영하며, 매체·소재·입찰 최적화로 ROAS와 전환 효율을 끌어올렸습니다.</p>
 
     <div class="metrics rv">
-      <div class="metric"><b>ROAS 829%</b><span class="m-brand">메노킨 JP</span><p>할인 경쟁 대신 구매 트리거<br>이벤트로 예산 재배분</p></div>
-      <div class="metric"><b>매출 +78%</b><span class="m-brand">지누스</span><p>GFA 고효율 지면 검증 후<br>비용 비중 7:3으로 확대</p></div>
-      <div class="metric"><b>전환 3배</b><span class="m-brand">스토어허브</span><p>메타·PMAX 전환 이벤트 디벨롭<br>(월 15건 → 45건)</p></div>
+      <div class="metric"><b>매출 +78%</b><span class="m-brand">지누스 · 예산 배분</span><p>GFA 지면별 그룹 분리 검증 후<br>고효율 그룹 비중 7:3으로 확대</p></div>
+      <div class="metric"><b>SA 매출 +54%</b><span class="m-brand">샤크닌자 · 입찰 최적화</span><p>ROAS 구간별 시간대<br>가중치 기준 수립</p></div>
+      <div class="metric"><b>유입당 비용 −46%</b><span class="m-brand">디스커버리 · 풀퍼널·소재</span><p>인지 → 유입 → 전환 단계별 병목 진단,<br>연 60억 브랜드</p></div>
     </div>
 
     <div class="intro-body rv">
@@ -596,6 +596,79 @@
         <span class="chip">매체 운영·최적화</span><span class="chip">예산·입찰 전략</span><span class="chip">소재 ABT</span><span class="chip">전환 트래킹 설계</span>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ================= WORK ================= -->
+<section class="block" id="work">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Selected Work<small>주요 프로젝트</small></h2>
+      <p>가설을 세우고, 운영으로 검증하고, 다음 캠페인의 기준으로 남기는 과정을 기록했습니다. 브랜드 카드를 클릭하면 상세 내용을 볼 수 있습니다.</p>
+    </div>
+
+    <div class="bgrid">
+      <button type="button" class="bcard rv" data-brand="menokin" style="--c:#b8406c" aria-haspopup="dialog">
+        <img class="bg" src="../assets/brand/menokin-card.jpg" alt="" loading="lazy">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="spend"><small>집행액</small><b>월 3,000만원</b></span>
+        <span class="eb">Brand 01 · 메노킨 JP · Qoo10</span>
+        <span class="tt">싱글원 데이터 기반 분석을 통한<br>이벤트 예산 재설계</span>
+        <span class="ds">할인 경쟁 중심 메가포 예산을 GWP·라이브·콜라보 등 구매 트리거 이벤트로 재배분</span>
+        <span class="rs"><span>트레저 콜라보 ROAS 829%</span><span>메가포 대비 매출 성과 증대</span></span>
+        <span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </button>
+      <button type="button" class="bcard rv" data-brand="storehub" style="--c:#c95f12" aria-haspopup="dialog">
+        <img class="bg" src="../assets/brand/storehub-web.jpg" alt="" loading="lazy">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="spend"><small>집행액</small><b>연간 12억</b></span>
+        <span class="eb">Brand 02 · 스토어허브 · PM</span>
+        <span class="tt">웹사이트 리뉴얼에 따른<br>전환 기준 설계 &amp; DA 디벨롭</span>
+        <span class="ds">전환값을 문의 + 예약 + 계약으로 재정의하고 Meta·Google 전환 이벤트/액션을 디벨롭</span>
+        <span class="rs"><span>메타·PMAX 월평균 전환 15건 → 45건</span></span>
+        <span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </button>
+      <button type="button" class="bcard rv" data-brand="zinus" style="--c:#0f736c" aria-haspopup="dialog">
+        <img class="bg" src="../assets/brand/zinus-card.jpg" alt="" loading="lazy">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="spend"><small>집행액</small><b>연간 40억</b></span>
+        <span class="eb">Brand 03 · 지누스 · Naver GFA</span>
+        <span class="tt">GFA 소재 그룹별<br>예산 비중 설정</span>
+        <span class="ds">스마트채널 노출 지면을 고려해 750*280 / 750*160 그룹을 분리하고 비용 비중을 7:3으로 조정</span>
+        <span class="rs"><span>ROAS 847%p ▲</span><span>매출 78% ▲</span><span>CPC 20% ▼</span></span>
+        <span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </button>
+      <button type="button" class="bcard rv" data-brand="sharkninja" style="--c:#2c3140" aria-haspopup="dialog">
+        <img class="bg" src="../assets/brand/sharkninja-card.jpg" alt="" loading="lazy">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="spend"><small>집행액</small><b>연간 2억</b></span>
+        <span class="eb">Brand 04 · 샤크닌자 · Naver SA</span>
+        <span class="tt">쇼핑검색 시간대 가중치 설정<br>&amp; 브랜드 SA 캠페인 관리</span>
+        <span class="ds">고성과 시간대 입찰 가중치로 프로모션 후반 매출 하락을 방어하고, 시즌·프로모션 맞춤 SA 운영</span>
+        <span class="rs"><span>SA 매출 54% ▲</span><span>ROAS 60%p ▲</span><span>쇼핑검색 CPC 18% ▼</span></span>
+        <span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </button>
+      <button type="button" class="bcard rv" data-brand="discovery" style="--c:#2d5f3c" aria-haspopup="dialog">
+        <img class="bg" src="../assets/brand/discovery-card.jpg" alt="" loading="lazy">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="spend"><small>집행액</small><b>연간 60억</b></span>
+        <span class="eb">Brand 05 · 디스커버리 · Meta · Kakao</span>
+        <span class="tt">브랜딩부터 퍼포먼스까지<br>풀 퍼널 마케팅 실행</span>
+        <span class="ds">인지(카카오 포커스보드) → 관심·유입(Meta) → 전환(무신사 협력광고), 단계별 효율 병목 진단과 최적화</span>
+        <span class="rs"><span>도달 당 비용 38% ▼</span><span>협력광고 ROAS 30% ▲</span><span>유입률 39% ▲</span></span>
+        <span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </button>
+      <button type="button" class="bcard rv" data-brand="bidding" style="--c:#3f4bb8" aria-haspopup="dialog">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="spend"><small>기간</small><b>2024 ~ 2026</b></span>
+        <span class="eb">Project 06 · 신규 광고주 비딩</span>
+        <span class="tt">비딩 참여 및<br>PT 제안서 작성</span>
+        <span class="ds">브랜드별 3C 조사부터 KPI·매체 전략·크리에이티브 방향까지 제안</span>
+        <span class="rs"><span>연간 60억 규모 광고주 영입</span><span>디스커버리 · 샤크닌자 · 메노킨</span></span>
+        <span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </button>
+    </div>
+    <p class="bgrid-hint">카드를 클릭하면 브랜드별 상세 내역을 볼 수 있습니다</p>
   </div>
 </section>
 
@@ -688,79 +761,6 @@
   </div>
 </section>
 
-
-<!-- ================= WORK ================= -->
-<section class="block" id="work">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <h2>Selected Work<small>주요 프로젝트</small></h2>
-      <p>가설을 세우고, 운영으로 검증하고, 다음 캠페인의 기준으로 남기는 과정을 기록했습니다. 브랜드 카드를 클릭하면 상세 내용을 볼 수 있습니다.</p>
-    </div>
-
-    <div class="bgrid">
-      <button type="button" class="bcard rv" data-brand="menokin" style="--c:#b8406c" aria-haspopup="dialog">
-        <img class="bg" src="../assets/brand/menokin-card.jpg" alt="" loading="lazy">
-        <span class="dot" aria-hidden="true"></span>
-        <span class="spend"><small>집행액</small><b>월 3,000만원</b></span>
-        <span class="eb">Brand 01 · 메노킨 JP · Qoo10</span>
-        <span class="tt">싱글원 데이터 기반 분석을 통한<br>이벤트 예산 재설계</span>
-        <span class="ds">할인 경쟁 중심 메가포 예산을 GWP·라이브·콜라보 등 구매 트리거 이벤트로 재배분</span>
-        <span class="rs"><span>트레저 콜라보 ROAS 829%</span><span>메가포 대비 매출 성과 증대</span></span>
-        <span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </button>
-      <button type="button" class="bcard rv" data-brand="storehub" style="--c:#c95f12" aria-haspopup="dialog">
-        <img class="bg" src="../assets/brand/storehub-web.jpg" alt="" loading="lazy">
-        <span class="dot" aria-hidden="true"></span>
-        <span class="spend"><small>집행액</small><b>연간 12억</b></span>
-        <span class="eb">Brand 02 · 스토어허브 · PM</span>
-        <span class="tt">웹사이트 리뉴얼에 따른<br>전환 기준 설계 &amp; DA 디벨롭</span>
-        <span class="ds">전환값을 문의 + 예약 + 계약으로 재정의하고 Meta·Google 전환 이벤트/액션을 디벨롭</span>
-        <span class="rs"><span>메타·PMAX 월평균 전환 15건 → 45건</span></span>
-        <span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </button>
-      <button type="button" class="bcard rv" data-brand="zinus" style="--c:#0f736c" aria-haspopup="dialog">
-        <img class="bg" src="../assets/brand/zinus-card.jpg" alt="" loading="lazy">
-        <span class="dot" aria-hidden="true"></span>
-        <span class="spend"><small>집행액</small><b>연간 40억</b></span>
-        <span class="eb">Brand 03 · 지누스 · Naver GFA</span>
-        <span class="tt">GFA 소재 그룹별<br>예산 비중 설정</span>
-        <span class="ds">스마트채널 노출 지면을 고려해 750*280 / 750*160 그룹을 분리하고 비용 비중을 7:3으로 조정</span>
-        <span class="rs"><span>ROAS 847%p ▲</span><span>매출 78% ▲</span><span>CPC 20% ▼</span></span>
-        <span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </button>
-      <button type="button" class="bcard rv" data-brand="sharkninja" style="--c:#2c3140" aria-haspopup="dialog">
-        <img class="bg" src="../assets/brand/sharkninja-card.jpg" alt="" loading="lazy">
-        <span class="dot" aria-hidden="true"></span>
-        <span class="spend"><small>집행액</small><b>연간 2억</b></span>
-        <span class="eb">Brand 04 · 샤크닌자 · Naver SA</span>
-        <span class="tt">쇼핑검색 시간대 가중치 설정<br>&amp; 브랜드 SA 캠페인 관리</span>
-        <span class="ds">고성과 시간대 입찰 가중치로 프로모션 후반 매출 하락을 방어하고, 시즌·프로모션 맞춤 SA 운영</span>
-        <span class="rs"><span>SA 매출 54% ▲</span><span>ROAS 60%p ▲</span><span>쇼핑검색 CPC 18% ▼</span></span>
-        <span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </button>
-      <button type="button" class="bcard rv" data-brand="discovery" style="--c:#2d5f3c" aria-haspopup="dialog">
-        <img class="bg" src="../assets/brand/discovery-card.jpg" alt="" loading="lazy">
-        <span class="dot" aria-hidden="true"></span>
-        <span class="spend"><small>집행액</small><b>연간 60억</b></span>
-        <span class="eb">Brand 05 · 디스커버리 · Meta · Kakao</span>
-        <span class="tt">브랜딩부터 퍼포먼스까지<br>풀 퍼널 마케팅 실행</span>
-        <span class="ds">인지(카카오 포커스보드) → 관심·유입(Meta) → 전환(무신사 협력광고), 단계별 효율 병목 진단과 최적화</span>
-        <span class="rs"><span>도달 당 비용 38% ▼</span><span>협력광고 ROAS 30% ▲</span><span>유입률 39% ▲</span></span>
-        <span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </button>
-      <button type="button" class="bcard rv" data-brand="bidding" style="--c:#3f4bb8" aria-haspopup="dialog">
-        <span class="dot" aria-hidden="true"></span>
-        <span class="spend"><small>기간</small><b>2024 ~ 2026</b></span>
-        <span class="eb">Project 06 · 신규 광고주 비딩</span>
-        <span class="tt">비딩 참여 및<br>PT 제안서 작성</span>
-        <span class="ds">브랜드별 3C 조사부터 KPI·매체 전략·크리에이티브 방향까지 제안</span>
-        <span class="rs"><span>연간 60억 규모 광고주 영입</span><span>디스커버리 · 샤크닌자 · 메노킨</span></span>
-        <span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </button>
-    </div>
-    <p class="bgrid-hint">카드를 클릭하면 브랜드별 상세 내역을 볼 수 있습니다</p>
-  </div>
-</section>
 
 <!-- ================= BRAND DETAIL MODAL ================= -->
 <div class="bm" id="bm" role="dialog" aria-modal="true" aria-labelledby="bm-title">
@@ -1611,7 +1611,7 @@
       <a class="mail" href="mailto:minkooung711@naver.com">minkooung711@naver.com <span aria-hidden="true">→</span></a>    </div>
     <div class="bottom">
       <span>Copyright © 2026 이민경</span>
-      <nav><a href="#about">About</a><a href="#work">Work</a><a href="#creative">Creative</a><a href="#top">Top ↑</a></nav>
+      <nav><a href="#work">Work</a><a href="#about">About</a><a href="#creative">Creative</a><a href="#top">Top ↑</a></nav>
     </div>
   </div>
 </footer>
